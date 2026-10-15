@@ -5,6 +5,12 @@ Dieses Repository ist der Startpunkt für **Übung 1** und wird in **allen folge
 
 ---
 
+## Übung 1
+- Autor: Sebastian Schweiger
+- Besonderheit: Mit einfachen Git-Befehlen bereits seit mehreren Jahren gearbeitet.
+
+---
+
 ## Voraussetzungen (VS Code)
 - **Extension Pack for Java** (Language Support, Debugger, Test Runner, Maven).
 - **JDK 17 oder neuer** aktiv: *Java: Configure Java Runtime* (getestet mit JDK 17, 21, 25 und 27).
