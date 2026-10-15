@@ -24,4 +24,14 @@ class TextUtilsTest {
     void isPalindrome_caseInsensitive_expectedTrue() {
         assertTrue(TextUtils.isPalindrome("Anna"));
     }
+
+    @Test
+    void isPalindrome_null_returnsFalse() {
+        assertFalse(TextUtils.isPalindrome(null));
+    }
+
+    @Test
+    void safeParseInt_negativeNumber_returnsValue() {
+        assertEquals(-7, TextUtils.safeParseInt("-7"));
+    }
 }
