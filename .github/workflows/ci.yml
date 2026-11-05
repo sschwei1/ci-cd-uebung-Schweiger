@@ -32,3 +32,11 @@ jobs:
 
       - name: Run unit tests
         run: mvn -B -ntp -DskipTests=false test
+
+      - name: Upload Surefire reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: surefire-reports
+          path: target/surefire-reports/**
+          if-no-files-found: warn
