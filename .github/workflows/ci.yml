@@ -3,7 +3,15 @@ name: CI
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - 'pom.xml'
+      - '.github/workflows/**'
   pull_request:
+    paths:
+      - 'src/**'
+      - 'pom.xml'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 concurrency:
