@@ -9,6 +9,8 @@ Dieses Repository ist der Startpunkt für **Übung 1** und wird in **allen folge
 - Autor: Sebastian Schweiger
 - Besonderheit: Mit einfachen Git-Befehlen bereits seit mehreren Jahren gearbeitet.
 
+[![CI](https://github.com/sschwei1/ci-cd-uebung-Schweiger/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sschwei1/ci-cd-uebung-Schweiger/actions/workflows/ci.yml)
+
 ---
 
 ## Voraussetzungen (VS Code)
