@@ -21,10 +21,9 @@ class CalculatorTest {
     }
 
     @Test
-    void divide_byZero_shouldReturnZero_currentBehavior() {
+    void divide_byZero_shouldThrowIllegalArgumentException() {
         Calculator c = new Calculator();
-        // Aktuelles (schlechtes) Verhalten absichtlich bestätigt – Refactoring in Ü2
-        assertEquals(0, c.divide(10, 0));
+        assertThrows(IllegalArgumentException.class, () -> c.divide(10, 0));
     }
 
     @Test

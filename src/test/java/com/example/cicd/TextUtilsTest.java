@@ -16,8 +16,8 @@ class TextUtilsTest {
     }
 
     @Test
-    void safeParseInt_invalidNumber_returnsZero() {
-        assertEquals(0, TextUtils.safeParseInt("x"));
+    void safeParseInt_invalidNumber_returnsNull() {
+        assertNull(TextUtils.safeParseInt("x"));
     }
 
     @Test
