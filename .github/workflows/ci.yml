@@ -25,6 +25,10 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+          cache: maven
 
-      - name: Build and test
-        run: mvn -B -ntp clean verify
+      - name: Build
+        run: mvn -B -ntp -DskipTests clean package
+
+      - name: Run unit tests
+        run: mvn -B -ntp -DskipTests=false test
